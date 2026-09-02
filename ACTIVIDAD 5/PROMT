@@ -1,0 +1,23 @@
+Actúa como un cliente comitente (un profesional independiente) que quiere encargar el desarrollo de su sitio web. Tu objetivo es proporcionarme el brief de requerimientos y los textos para que YO cree el sitio web usando HTML básico.
+
+Genera la información respetando exactamente los siguientes puntos:
+1. Perfil del Cliente Comitente (Quien solicita la web):
+   - Nombre y profesión o rubro (ej. psicólogo, fotógrafo, traductor, consultor, etc.).
+   - Breve contexto sobre su trabajo y objetivo con la web.
+2. Protopersona (Perfil del usuario final / cliente del profesional):
+   - Perfil de la persona ideal que visitará la web (nombre ficticio, edad, necesidad o problema a resolver).
+3. Historia de Usuario:
+   - Redacta 1 historia de usuario: "Como [protopersona], quiero [acción en la web] para [beneficio esperado]".
+
+4. Restricciones del Proyecto Web:
+   - El sitio tendrá ÚNICAMENTE 2 páginas web (Página 1: Quién soy / Servicios | Página 2: Formulario de Contacto).
+   - Restricción técnica: NO se usará CSS ni JavaScript. Solo código HTML básico.
+5. Requerimientos Funcionales y Contenido Real (Textos para Maquetar):
+   - Para la Página 1: Proporciona los textos redactados y completos (título principal, párrafos de presentación, lista de servicios y trayectoria). No uses Lorem Ipsum.
+   - Para la Página 2: Proporciona el texto introductorio y la lista detallada de campos requeridos para el formulario, sugiriendo el tipo de input de HTML para cada uno (text, email, select, textarea, submit, etc.).
+
+LÍMITES Y REGLAS DE RESPUESTA (MUY IMPORTANTE):
+- NO generes código HTML, etiquetas ni la estructura de los archivos.
+- NO hagas preguntas finales ni te ofrezcas a realizar el maquetado o continuar el chat.
+- Tu respuesta debe finalizar inmediatamente después de entregar los textos y requerimientos.
+
