@@ -1,0 +1,6 @@
+Utilizar selectores de TIPO para estilizar los elementos de manera global.
+Utilizar selectores de CLASE para especificar los bloques principales de nuestro layout (plantilla). En el caso de que el desarrollo no cuente con los 3 bloques vistos (header, main y footer), deberá crearlos.
+Los selectores de CLASE deben ser denominados con nombres acordes a la función de dicho bloque; esto mejora la lectura del código, el mantenimiento y escalado.
+Utilizar selectores combinados.
+Utilizar el modelo de caja alternativo.
+Utilizar un reseteo básico y su organización.
