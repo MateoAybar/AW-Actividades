@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria-LucasBenitez-Contacto</title>
+    <link rel="icon" href="./recursos/imagenes/favicon.ico">
+    <link rel="stylesheet" href="./recursos/estilos/contacto.css">
+</head>
+<body>
+
+    <header class="cabecera-principal">
+        <a href="./index.html" aria-label="Vinculo al inicio">
+            <img src="./recursos/imagenes/cybersecurity.webp" alt="Logo ciberseguridad">
+        </a>
+        <nav>
+            <a href="./index.html">Informacion</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <h1>Solicitud de Consulta y Presupuesto</h1>
+        <p>Complete el siguiente formulario con los datos de su empresa y el motivo de su consulta. Me pondré en contacto en un plazo máximo de 24 horas hábiles para coordinar una entrevista inicial sin cargo.</p>
+        <h2>Escribinos</h2>
+
+        <form action="./contacto.html" method="post">
+            <label for="id-nombre-completo">Nombre completo</label>
+            <input type="text" name="nombre-completo" id="id-nombre-completo">
+
+            <label for="id-email">Email</label>
+            <input type="email" name="email" id="id-email">
+
+            <label for="id-telefono">Telefono de contacto</label>
+            <input type="tel" name="telefono" id="id-telefono">
+
+            <label for="id-nombre-empresa">Nombre de la empresa</label>
+            <input type="text" name="nombre-empresa" id="id-nombre-empresa">
+
+            <label for="id-tamanio-empresa">Tamaño de la empresa</label>
+            <select name="tamanio-empresa" id="id-tamanio-empresa">
+                <option value="1-a-10">1 a 10 empleados</option>
+                <option value="11-a-50">11 a 50 empleados</option>
+                <option value="mas-50">mas de 50</option> 
+            </select>
+
+            <section>
+                <label>Servicio solicitado:</label>
+
+                <label for="id-servicio-configuracion">Configuracion de redes</label>
+                <input type="radio" name="servicio" id="id-servicio-configuracion" value="configuracion">
+
+                <label for="id-servicio-auditoria">Auditoria de seguridad</label>
+                <input type="radio" name="servicio" id="id-servicio-auditoria" value="auditoria">
+
+                <label for="id-servicio-capacitacion">Capacitacion de personal</label>
+                <input type="radio" name="servicio" id="id-servicio-capacitacion" value="capacitacion">
+
+                <label for="id-servicio-plan-contingencia">Plan de contingencia</label>
+                <input type="radio" name="servicio" id="id-servicio-plan-contingencia" value="plan-contingencia">
+
+                <label for="id-servicio-otro">Otro</label>
+                <input type="radio" name="servicio" id="id-servicio-otro" value="otro">
+            </section>
+
+            <label for="id-detalle-consulta">Detalle de la consulta</label>
+            <textarea name="detalle-consulta" id="id-detalle-consulta" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </main>
+
+    <footer class="pie-principal">
+        <ul>
+            <li><a href="https://instagram.com/LucasBciberseguridad">@LucasBciberseguridad</a></li>
+            <li><p>Telefono de contacto: 351123456</p></li>
+            <li><p>Cordoba, Argentina</p></li>
+        </ul>
+    </footer>
+
+    <a href="https://wa.me/123456789" class="boton-flotante" target="_blank">WhatsApp</a>
+
+</body>
+</html>
