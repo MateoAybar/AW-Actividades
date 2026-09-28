@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'Sora';
+    src: url(./fuentes/Sora-Regular.ttf);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* -------------------------------------------------- */
+
+html {
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    color: #2b3a30;
+    background-color: #f7f9f6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #1f3d2b;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* -------------------------------------------------- */
+
+.header-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f3d2b;
+    color: #ffffff;
+    padding: 16px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contenido-principal {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.footer-principal {
+    background-color: #1f3d2b;
+    color: #e5ede7;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+
+/* -------------------------------------------------- */
+
+.header-logo img {
+    height: 48px;
+    width: auto;
+}
+
+.header-titulo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav a {
+    color: #e5ede7;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.header-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+
+/* -------------------------------------------------- */
+
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cabana-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e7efe9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cabana-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    color: #1f3d2b;
+}
+
+.cabana-card img {
+    border-radius: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.cabana-card p {
+    font-size: 0.95rem;
+    color: #4a5d50;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.cabana-card a {
+    display: block;
+    text-decoration: none;
+}
+
+
+/* -------------------------------------------------- */
+
+.btn-reservar,
+.btn-submit {
+    display: inline-block;
+    width: 100%;
+    background-color: #264e36;
+    color: #ffffff;
+    font-family: 'Sora', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(38, 78, 54, 0.25);
+}
+
+.btn-reservar:hover,
+.btn-submit:hover {
+    background-color: #1b3827;
+    box-shadow: 0 4px 12px rgba(27, 56, 39, 0.35);
+}
+
+.btn-reservar:active,
+.btn-submit:active {
+    transform: translateY(1px);
+}
+
+
+/* -------------------------------------------------- */
+
+.formulario-reserva {
+    background-color: #ffffff;
+    max-width: 520px;
+    margin: 20px auto 40px;
+    padding: 36px 32px;
+    border-radius: 14px;
+    border: 1px solid #e2ece5;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.form-titulo {
+    font-size: 1.4rem;
+    margin-bottom: 22px;
+    color: #1f3d2b;
+    border-bottom: 2px solid #eef3f0;
+    padding-bottom: 10px;
+}
+
+.fila-fechas {
+    display: flex;
+    gap: 16px;
+}
+
+.fila-fechas .campo-form {
+    flex: 1;
+}
+
+.campo-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-form label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #3b5245;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.campo-form input,
+.campo-form textarea {
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: #2b3a30;
+    background-color: #fbfcfa;
+    border: 1.5px solid #d4ded8;
+    border-radius: 8px;
+}
+
+.campo-form input:focus,
+.campo-form textarea:focus {
+    outline: none;
+    border-color: #264e36;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(38, 78, 54, 0.12);
+}
+
+.campo-form textarea {
+    resize: vertical;
+    min-height: 85px;
+}
+
+
+/* -------------------------------------------------- */
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
